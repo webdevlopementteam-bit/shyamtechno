@@ -17,6 +17,7 @@ export const metadata = {
   description:
     "Get in touch with Shyam Techno Print, Faridabad for Paper Bag & Flexo Printing Machine enquiries. Call +91 9654707061 or email us today.",
   keywords: ["Contact Us", "Shyam Techno Print"],
+  alternates: { canonical: "/contact-us" },
 };
 
 export default function ContactPage() {

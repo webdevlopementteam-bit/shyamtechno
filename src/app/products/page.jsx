@@ -7,6 +7,7 @@ export const metadata = {
   description:
     "Explore Shyam Techno Print's complete range of Paper Bag, Flexo Printing, Non Woven Bag, Napkin Making Machines & Tissue Paper Bag. Quality manufacturing in Faridabad.",
   keywords: ["Product", "Our Products", "Shyam Techno Print"],
+  alternates: { canonical: "/products" },
 };
 
 export default function ProductsPage() {

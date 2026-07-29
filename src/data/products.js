@@ -23,7 +23,7 @@ const products = [
         "Looking for Butter Paper and Aluminium Foil Rewinding Machine in Faridabad? Shyam Techno Print offers high-speed, durable & cost-effective machines. Contact Us Today!",
       keywords: ["Butter paper and aluminium foil rewinding machine"],
     },
-    image: "/products/Butter Paper & Aluminium Foil Rewinding Machine .png",
+    image: "/products/Butter Paper and Aluminium Foil Rewinding Machine .png",
     specs: {
       title: "Butter paper and aluminium foil rewinding machine",
       columns: ["Parameter", "Specification"],

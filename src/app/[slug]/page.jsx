@@ -13,6 +13,7 @@ export async function generateMetadata({ params }) {
       title: product.meta.title,
       description: product.meta.description,
       keywords: product.meta.keywords,
+      alternates: { canonical: `/${product.slug}` },
     };
   }
 
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }) {
     title: `${product.name} | Shyam Techno Print`,
     description: `Shyam Techno Print offers ${product.name} in Faridabad. High-quality, durable machines with 17+ years of manufacturing experience. Contact us for a quote today!`,
     keywords: [product.keyword || product.name, "Shyam Techno Print"],
+    alternates: { canonical: `/${product.slug}` },
   };
 }
 

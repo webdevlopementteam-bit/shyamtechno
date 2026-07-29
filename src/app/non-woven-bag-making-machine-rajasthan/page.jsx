@@ -1,5 +1,16 @@
 import ProductDetail from "@/components/ProductDetail";
 
+export const metadata = {
+  title: "Non Woven Bag Making Machine Manufacturer in Rajasthan | Shyam Techno Print",
+  description:
+    "Buy a high-speed, fully automatic Non Woven Bag Making Machine in Rajasthan from Shyam Techno Print. Durable, eco-friendly, and cost-effective. Contact us today!",
+  keywords: [
+    "Non Woven Bag Making Machine",
+    "Non Woven Bag Making Machine in Rajasthan",
+  ],
+  alternates: { canonical: "/non-woven-bag-making-machine-rajasthan" },
+};
+
 const product = {
   name: "Non Woven Bag Making Machine manufacturer in Rajasthan",
   keyword: "Non Woven Bag Making Machine",

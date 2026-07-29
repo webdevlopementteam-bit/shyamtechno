@@ -13,6 +13,7 @@ export const metadata = {
   description:
     "Shyam Techno Print - Faridabad based manufacturer of Paper Bag, Flexo Printing & Medical Pouch Making Machines. 17+ yrs experience. Get a quote today!",
   keywords: ["Shyam Techno Print", "Paper Bag Making Machine in Faridabad"],
+  alternates: { canonical: "/" },
 };
 
 export default function Home() {
