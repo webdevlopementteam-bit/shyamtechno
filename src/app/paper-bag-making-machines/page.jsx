@@ -1,10 +1,16 @@
 import ProductDetail from "@/components/ProductDetail";
 
 const product = {
-  name: "Paper Bag Making Machine & Grocery Bag Making Machine Manufacturer in India",
+  name: "Paper Bag Making Machine",
   keyword: "Paper Bag Making Machine",
-  hideHeading: true,
   image: "/products/V Bottom Paper Bag Making Machine .png",
+  description: [
+    "Fully automatic Paper Bag Making Machine for high-speed production",
+    "Works with kraft paper, coated paper & food-grade paper",
+    "Ideal for grocery, bakery, and retail bags",
+    "Production speed: up to 500 bags/minute",
+    "Made in India – reliable, long-lasting performance",
+  ],
   content: [
     {
       heading:

@@ -386,7 +386,7 @@ const products = [
   },
   {
     id: 6,
-    slug: "flexo-printing-machine",
+    slug: "flexo-printing-machine-manufacturer",
     name: "Flexo Printing Machine",
     meta: {
       title: "Best Flexo Printing Machine Manufacturer in Faridabad | Shyam Techno Print",
@@ -1369,7 +1369,7 @@ const products = [
   },
   {
     id: 13,
-    slug: "offset-printing-machine",
+    slug: "offset-printing-machine-manufacturer",
     name: "Offset Printing Machine",
     meta: {
       title: "Buy Offset Printing Machine Manufacturer in Faridabad | Shyam Techno Print",
@@ -1902,7 +1902,7 @@ const products = [
   },
   {
     id: 16,
-    slug: "tissue-paper-making-machine-single-size",
+    slug: "tissue-paper-making-machine",
     name: "Tissue Paper Making Machine (Single Size)",
     keyword: "Tissue Paper Making Machine",
     meta: {
