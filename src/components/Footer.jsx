@@ -33,9 +33,9 @@ const quickLinks = [
 const products = [
   { label: "Square Bottom Paper Bag Making Machine", href: "/square-bottom-paper-bag-making-machine" },
   { label: "V Bottom Paper Bag Making Machine", href: "/v-bottom-paper-bag-making-machine" },
-  { label: "Flexo Printing Machine", href: "/flexo-printing-machine" },
+  { label: "Flexo Printing Machine", href: "/flexo-printing-machine-manufacturer" },
   { label: "Non Woven Bag Making Machine", href: "/non-woven-bag-making-machine" },
-  { label: "Offset Printing Machine", href: "/offset-printing-machine" },
+  { label: "Offset Printing Machine", href: "/offset-printing-machine-manufacturer" },
 ];
 
 export default function Footer() {

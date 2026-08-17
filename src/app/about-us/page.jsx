@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Know about Shyam Techno Print, a trusted Faridabad-based manufacturer of Paper Bag, Flexo Printing Machine & Tissue Bag with 17+ years of industry expertise.",
   keywords: ["About", "About Us", "Shyam Techno Print"],
-  alternates: { canonical: "/about-us" },
+  alternates: { canonical: "/about-us/" },
 };
 
 export default function AboutPage() {

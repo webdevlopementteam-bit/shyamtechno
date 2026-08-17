@@ -329,7 +329,7 @@ export const metadata = {
     "Paper Bag Making Machines",
     "Paper Bag Making Machines Manufacturer",
   ],
-  alternates: { canonical: "/paper-bag-making-machines" },
+  alternates: { canonical: "/paper-bag-making-machines/" },
 };
 
 export default function PaperBagMakingMachinePage() {

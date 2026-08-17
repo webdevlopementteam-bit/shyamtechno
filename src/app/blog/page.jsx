@@ -12,7 +12,7 @@ export const metadata = {
     "packaging machine tips",
     "Shyam Techno Print",
   ],
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog/" },
 };
 
 export default function BlogPage() {

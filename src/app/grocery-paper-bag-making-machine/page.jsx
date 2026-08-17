@@ -276,7 +276,7 @@ export const metadata = {
     "Grocery Bag Making Machine",
     "Grocery Bag Making Machine in faridabad",
   ],
-  alternates: { canonical: "/grocery-bag-making-machine" },
+  alternates: { canonical: "/grocery-paper-bag-making-machine/" },
 };
 
 export default function GroceryBagMakingMachinePage() {

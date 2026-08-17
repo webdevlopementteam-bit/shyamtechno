@@ -8,7 +8,7 @@ export const metadata = {
     "Butter Paper Sheet Cutting Machine",
     "Butter Paper Sheet Cutting Machine in Mumbai",
   ],
-  alternates: { canonical: "/butter-paper-sheet-cutting-machine-mumbai" },
+  alternates: { canonical: "/butter-paper-sheet-cutting-machine-mumbai/" },
 };
 
 const product = {

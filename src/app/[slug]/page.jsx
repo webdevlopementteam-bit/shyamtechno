@@ -2,6 +2,10 @@ import { notFound } from "next/navigation";
 import products from "@/data/products";
 import ProductDetail from "@/components/ProductDetail";
 
+export function generateStaticParams() {
+  return products.map((product) => ({ slug: product.slug }));
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const product = products.find((item) => item.slug === slug);
@@ -13,7 +17,7 @@ export async function generateMetadata({ params }) {
       title: product.meta.title,
       description: product.meta.description,
       keywords: product.meta.keywords,
-      alternates: { canonical: `/${product.slug}` },
+      alternates: { canonical: `/${product.slug}/` },
     };
   }
 
@@ -21,7 +25,7 @@ export async function generateMetadata({ params }) {
     title: `${product.name} | Shyam Techno Print`,
     description: `Shyam Techno Print offers ${product.name} in Faridabad. High-quality, durable machines with 17+ years of manufacturing experience. Contact us for a quote today!`,
     keywords: [product.keyword || product.name, "Shyam Techno Print"],
-    alternates: { canonical: `/${product.slug}` },
+    alternates: { canonical: `/${product.slug}/` },
   };
 }
 

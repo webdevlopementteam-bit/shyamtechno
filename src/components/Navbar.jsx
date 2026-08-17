@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
 import products from "@/data/products";
 
@@ -123,30 +124,30 @@ export default function Header() {
                 {NAV_LINKS.map((link) =>
                   link.hasDropdown ? (
                     <div key={link.label} className="relative group">
-                      <a
+                      <Link
                         href={link.href}
                         className="flex items-center gap-1 text-white font-bold text-lg hover:opacity-80"
                       >
                         {link.label}
                         <ChevronDown className="w-4 h-4 mt-0.5 transition-transform group-hover:rotate-180" />
-                      </a>
+                      </Link>
 
                       <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity absolute left-0 top-full pt-3 z-30">
                         <div className="w-[560px] max-h-[420px] overflow-y-auto grid grid-cols-2 gap-x-6 gap-y-1 bg-white rounded-xl shadow-xl border border-gray-100 p-4">
                           {products.map((product) => (
-                            <a
+                            <Link
                               key={product.slug}
                               href={`/${product.slug}`}
                               className="block px-2 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-red-50 hover:text-red-600"
                             >
                               {product.name}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <a
+                    <Link
                       key={link.label}
                       href={link.href}
                       className={`flex items-center gap-1 text-white font-bold text-lg hover:opacity-80 ${
@@ -154,16 +155,18 @@ export default function Header() {
                       }`}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   )
                 )}
               </nav>
 
               {/* Desktop enquiry button */}
               <div className="hidden lg:block z-10 shrink-0 ">
-              <a href="/contact-us">  <button className="bg-white text-gray-900 font-semibold text-base px-8 py-3 rounded-full shadow-md hover:bg-gray-100 whitespace-nowrap cursor-pointer">
-                  ENQUIRY NOW
-                </button></a>
+                <Link href="/contact-us">
+                  <button className="bg-white text-gray-900 font-semibold text-base px-8 py-3 rounded-full shadow-md hover:bg-gray-100 whitespace-nowrap cursor-pointer">
+                    ENQUIRY NOW
+                  </button>
+                </Link>
               </div>
 
               {/* Mobile menu toggle */}
@@ -188,13 +191,13 @@ export default function Header() {
                   link.hasDropdown ? (
                     <div key={link.label} className="border-b border-white/20">
                       <div className="flex items-center justify-between text-white font-bold text-base py-3">
-                        <a
+                        <Link
                           href={link.href}
                           className="opacity-90"
                           onClick={() => setMenuOpen(false)}
                         >
                           {link.label}
-                        </a>
+                        </Link>
                         <button
                           type="button"
                           aria-label="Toggle products list"
@@ -216,20 +219,20 @@ export default function Header() {
                       >
                         <div className="flex flex-col gap-1 pb-3 pl-3 max-h-[400px] overflow-y-auto">
                           {products.map((product) => (
-                            <a
+                            <Link
                               key={product.slug}
                               href={`/${product.slug}`}
                               className="text-white/90 text-sm py-1.5"
                               onClick={() => setMenuOpen(false)}
                             >
                               {product.name}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <a
+                    <Link
                       key={link.label}
                       href={link.href}
                       className={`flex items-center justify-between text-white font-bold text-base py-3 border-b border-white/20 ${
@@ -237,7 +240,7 @@ export default function Header() {
                       }`}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   )
                 )}
                 <button className="mt-4 bg-white text-gray-900 font-semibold text-base px-6 py-3 rounded-full shadow-md hover:bg-gray-100 w-full">

@@ -8,7 +8,7 @@ export const metadata = {
     "Non Woven Bag Making Machine",
     "Non Woven Bag Making Machine in Rajasthan",
   ],
-  alternates: { canonical: "/non-woven-bag-making-machine-rajasthan" },
+  alternates: { canonical: "/non-woven-bag-making-machine-rajasthan/" },
 };
 
 const product = {
