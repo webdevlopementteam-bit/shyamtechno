@@ -1902,22 +1902,22 @@ const products = [
   },
   {
     id: 16,
-    slug: "tissue-paper-making-machine",
-    name: "Tissue Paper Making Machine (Single Size)",
-    keyword: "Tissue Paper Making Machine",
+    slug: "tissue-paper-machine",
+    name: "Tissue Paper Machine (Single Size)",
+    keyword: "Tissue Paper Machine",
     meta: {
-      title: "Buy Tissue Paper Making Machine Manufacturer in Faridabad | Shyam Techno Print",
+      title: "Buy Fully Automatic Multi Size Tissue Paper Machine in Faridabad | Shyam Techno Print",
       description:
-        "Shyam Techno Print manufactures high-quality Tissue Paper Making Machines (Model STP-NB40) in Faridabad. Double colour printing, 2 lakh pcs/8hr capacity. Contact Us Today!",
+        "Shyam Techno Print manufactures high-quality Tissue Paper Machine in Faridabad (Model STP-NB40). Double colour printing, 2 lakh pcs/8hr capacity. Contact Us Today!",
       keywords: [
-        "Tissue Paper Making Machine",
-        "Tissue Paper Making Machine Manufacturer",
-        "Tissue Paper Making Machine in faridabad",
+        "Tissue Paper Machine",
+        "Tissue Paper Machines",
+        "Tissue Paper Machine in Faridabad",
       ],
     },
     image: "/products/Tissue Paper Making Machine (Single Size) .png",
     specs: {
-      title: "Tissue Paper Making Machine Manufacturer in Faridabad",
+      title: "Fully Automatic Multi Size Tissue Paper Machine Manufacturer in Faridabad",
       rows: [
         ["Model", "STP-NB40"],
         ["Working Size", "As Per Requirement"],
@@ -1938,19 +1938,20 @@ const products = [
     content: [
       {
         heading:
-          "Best Tissue Paper Making Machine Manufacturer in faridabad | Shyam Techno Print",
+          "Best Tissue Paper Machine Manufacturer in Faridabad | Shyam Techno Print",
         paragraphs: [
-          "The demand for Tissue Paper Making Machine is growing rapidly as businesses expand into hygienic, sustainable, and high-volume paper product manufacturing. At Shyam Techno Print, we manufacture advanced Tissue Paper Making Machine in faridabad designed for high-speed production, precision engineering, and long-term industrial performance. Our machines are ideal for producing facial tissues, toilet rolls, kitchen towels, napkins, and other tissue paper products with consistent quality and minimal material wastage. Built using modern automation technology and premium industrial components, our machines help manufacturers improve productivity, reduce operating costs, and achieve reliable production efficiency for businesses of every size.",
+          "The demand for Fully Automatic Multi Size Tissue Paper Machine is growing rapidly as businesses expand into hygienic, sustainable, and high-volume paper product manufacturing. At Shyam Techno Print, we manufacture advanced Fully Automatic Multi Size Tissue Paper Machine in Faridabad designed for high-speed production, precision engineering, and long-term industrial performance.",
+          "Our machines are ideal for producing facial tissues, toilet rolls, kitchen towels, napkins, and other tissue paper products with consistent quality and minimal material wastage. Built using modern automation technology and premium industrial components, our machines help manufacturers improve productivity, reduce operating costs, and achieve reliable production efficiency for businesses of every size.",
           "India's tissue paper market is growing at a rapid pace — driven by rising hygiene awareness, expanding hospitality industry, and increasing demand from restaurants, hotels, offices, and households across the country. With millions of tissue paper packets consumed every single day, the demand for high-quality tissue paper manufacturing machines has never been higher.",
-          "At Shyam Techno Print, we are one of the most trusted suppliers of Tissue Paper Making Machine in Faridabad — delivering machines that combine high-speed production, double colour printing, and robust industrial build quality in one powerful package.",
+          "At Shyam Techno Print, we are one of the most trusted suppliers of Tissue Paper Machine in Faridabad — delivering machines that combine high-speed production, double colour printing, and robust industrial build quality in one powerful package.",
           "Our Model STP-NB40 produces an impressive 2,00,000 tissue pieces in just 8 hours — giving your business the output capacity to serve hotels, restaurants, retail chains, and institutional buyers with complete ease.",
           "With 17+ years of experience in packaging machinery, our machines are engineered to deliver consistent performance, shift after shift, day after day.",
         ],
       },
       {
-        heading: "What is a Tissue Paper Making Machine?",
+        heading: "What is a Tissue Paper Machine?",
         paragraphs: [
-          "A Tissue Paper Making Machine Manufacturer is an industrial machine that converts lightweight paper rolls into finished tissue paper products — including facial tissues, napkins, and table tissues — through a fully automated process of unrolling, embossing, printing, folding, cutting, and stacking.",
+          "A Tissue Paper Machine Manufacturer is an industrial machine that converts lightweight paper rolls into finished tissue paper products — including facial tissues, napkins, and table tissues — through a fully automated process of unrolling, embossing, printing, folding, cutting, and stacking.",
           "These tissue papers are widely used across:",
         ],
         list: [
@@ -1966,7 +1967,7 @@ const products = [
         note: "With hygiene becoming a top priority for consumers and businesses alike, the demand for quality tissue paper products is growing consistently — making tissue paper manufacturing one of the most stable and profitable businesses in India today.",
       },
       {
-        heading: "Key Features of Shyam Techno Print's Tissue Paper Making Machine",
+        heading: "Key Features of Shyam Techno Print's Tissue Paper Machine",
         items: [
           {
             title: "Massive Production Output — 2,00,000 Pieces Per 8 Hours",
@@ -2029,7 +2030,7 @@ const products = [
         },
       },
       {
-        heading: "Who Needs a Tissue Paper Making Machine?",
+        heading: "Who Needs a Tissue Paper Machine?",
         items: [
           {
             title: "Tissue Paper Manufacturers and Suppliers",
@@ -2051,22 +2052,22 @@ const products = [
       },
       {
         heading:
-          "Why Choose Shyam Techno Print for Tissue Paper Making Machine in Faridabad?",
+          "Why Choose Shyam Techno Print for Tissue Paper Machine in Faridabad?",
         paragraphs: [
-          "At Shyam Techno Print, we believe that every successful tissue paper making machine manufacturing business starts with reliable machinery. With years of experience in designing and manufacturing paper converting equipment, we provide complete solutions tailored to your production requirements. Our engineering team helps customers choose the right machine configuration based on production capacity, paper quality, product type, and future expansion plans. From consultation to installation and technical support, we remain your trusted manufacturing partner.",
+          "At Shyam Techno Print, we believe that every successful tissue paper machine in Faridabad business starts with reliable machinery. With years of experience in designing and manufacturing paper converting equipment, we provide complete solutions tailored to your production requirements. Our engineering team helps customers choose the right machine configuration based on production capacity, paper quality, product type, and future expansion plans. From consultation to installation and technical support, we remain your trusted manufacturing partner.",
         ],
         items: [
           {
             title: "17+ Years of Proven Manufacturing Experience",
-            text: "Shyam Techno Print has been manufacturing high-quality packaging machinery since 2008. Our tissue paper making machines are the result of 17+ years of continuous refinement, customer feedback, and engineering excellence.",
+            text: "Shyam Techno Print has been manufacturing high-quality packaging machinery since 2008. Our tissue paper machines are the result of 17+ years of continuous refinement, customer feedback, and engineering excellence.",
           },
           {
             title: "Double Colour Printing — A Feature Most Competitors Don't Offer",
-            text: "Many tissue paper making machine suppliers offer basic machines with no printing capability. Our STP-NB40 comes with built-in double colour printing — giving your business a powerful edge in serving premium clients who need branded tissues.",
+            text: "Many tissue paper machines suppliers offer basic machines with no printing capability. Our STP-NB40 comes with built-in double colour printing — giving your business a powerful edge in serving premium clients who need branded tissues.",
           },
           {
             title: "Buy Directly from the Manufacturer in Faridabad",
-            text: "When you buy a Tissue Paper Making Machine in Faridabad from Shyam Techno Print, you deal directly with the manufacturer — no middlemen, no inflated prices. Our facility in Faridabad, Haryana is easily accessible from Delhi, Gurgaon, Noida, and all of Delhi NCR — making it convenient to visit and see the machine in action before you buy.",
+            text: "When you buy a Tissue Paper Machine in Faridabad from Shyam Techno Print, you deal directly with the manufacturer — no middlemen, no inflated prices. Our facility in Faridabad, Haryana is easily accessible from Delhi, Gurgaon, Noida, and all of Delhi NCR — making it convenient to visit and see the machine in action before you buy.",
           },
           {
             title: "Complete Installation and Training Support",
@@ -2085,11 +2086,11 @@ const products = [
       {
         heading: "Built for High-Speed Production & Long-Term Reliability",
         paragraphs: [
-          "Our Tissue Paper Making Machines are engineered using advanced PLC automation, precision mechanical systems, servo-controlled technology, and heavy-duty industrial components. Every machine is designed to deliver stable production, accurate converting, reduced downtime, and energy-efficient operation. Before dispatch, each machine is tested under real production conditions to ensure smooth performance and dependable output from day one.",
+          "Our Tissue Paper Machines are engineered using advanced PLC automation, precision mechanical systems, servo-controlled technology, and heavy-duty industrial components. Every machine is designed to deliver stable production, accurate converting, reduced downtime, and energy-efficient operation. Before dispatch, each machine is tested under real production conditions to ensure smooth performance and dependable output from day one.",
         ],
       },
       {
-        heading: "Applications of Tissue Paper Making Machines",
+        heading: "Applications of Tissue Paper Machines",
         paragraphs: ["Our machines are suitable for manufacturing:"],
         list: [
           "Facial Tissue Paper",
@@ -2122,7 +2123,7 @@ const products = [
       {
         heading: "Manufacturing Expertise",
         paragraphs: [
-          "At Shyam Techno Print, our manufacturing process is backed by experienced engineers, modern production facilities, and strict quality standards. Every Tissue Paper Making Machine is designed, assembled, and inspected in-house to ensure exceptional durability, production accuracy, and consistent performance. Continuous research, engineering improvements, and customer feedback help us deliver machines that meet the evolving demands of the tissue paper industry.",
+          "At Shyam Techno Print, our manufacturing process is backed by experienced engineers, modern production facilities, and strict quality standards. Every Tissue Paper Machines is designed, assembled, and inspected in-house to ensure exceptional durability, production accuracy, and consistent performance. Continuous research, engineering improvements, and customer feedback help us deliver machines that meet the evolving demands of the tissue paper industry.",
         ],
       },
       {
@@ -2168,9 +2169,9 @@ const products = [
         note: "Our experienced service team ensures your production continues with minimal downtime.",
       },
       {
-        heading: "Tissue Paper Making Machine Price in India",
+        heading: "Tissue Paper Machine Price in India",
         paragraphs: [
-          "The price of a Tissue Paper Making Machine in India depends on several factors:",
+          "The price of a Tissue Paper Machine in India depends on several factors:",
         ],
         list: [
           "Production speed and output capacity",
@@ -2192,7 +2193,7 @@ const products = [
             text: "Hotels, restaurants, offices, hospitals, retail shops, and households are all potential customers. Start by identifying the demand in your local area and nearby cities.",
           },
           {
-            title: "Step 2 — Plan Your Investment",
+            title: "Step 2 — Plan Your Investment}",
             text: "Calculate your startup costs — machine, raw materials (parent tissue rolls, 14-45 GSM), workspace, packaging, and working capital. The STP-NB40 offers one of the best output-to-investment ratios available.",
           },
           {
@@ -2212,57 +2213,54 @@ const products = [
     ],
     faqs: [
       {
-        question: "What are Tissue Paper Making Machines?",
+        question: "What are Tissue Paper Machines?",
         answer:
-          "Tissue Paper Making Machines are industrial machines used to manufacture various tissue paper products such as facial tissues, toilet rolls, kitchen towels, paper napkins, and jumbo tissue rolls. These machines automate the converting process, ensuring high production speed, consistent quality, and efficient operation.",
+          "Tissue Paper Machines are industrial machines that manufacture facial tissues, toilet rolls, kitchen towels, napkins, and jumbo tissue rolls with high speed and consistent quality.",
       },
       {
         question: "How many tissue pieces does the STP-NB40 produce per shift?",
         answer:
-          "The STP-NB40 produces 2,00,000 tissue pieces in an 8-hour shift — making it ideal for large-scale commercial production.",
+          "The STP-NB40 produces 2,00,000 tissue pieces in one 8-hour shift, making it ideal for large-scale commercial production.",
       },
       {
-        question: "What is the production capacity?",
+        question: "What is the production capacity of Shyam Techno Print's tissue machines?",
         answer:
-          "Production capacity depends on the selected machine model, tissue GSM, and product specifications. Our experts can recommend the most suitable machine based on your production goals.",
+          "Production capacity varies by machine model, tissue GSM, and product type. Our experts help you choose the right machine for your target output.",
       },
       {
-        question: "Which products can be manufactured?",
-        answer: "Our machines can produce:",
-        list: [
-          "Facial Tissue",
-          "Toilet Tissue Rolls",
-          "Kitchen Rolls",
-          "Napkins",
-          "Jumbo Tissue Rolls",
-          "Industrial Tissue Products",
-          "Hospitality Tissue Products",
-        ],
+        question: "Which products can be manufactured on these machines?",
+        answer:
+          "These machines manufacture facial tissue, toilet rolls, kitchen rolls, napkins, jumbo tissue rolls, and industrial and hospitality tissue products.",
       },
       {
         question: "Why choose Shyam Techno Print?",
         answer:
-          "Shyam Techno Print combines manufacturing expertise, precision engineering, strict quality control, and dependable after-sales support to deliver reliable Tissue Paper Making Machines that help businesses improve productivity and maintain consistent product quality.",
+          "Shyam Techno Print is the best choice because of its precision engineering, strict quality control, and reliable after-sales support that ensures long-term productivity.",
       },
       {
-        question: "What support do you provide after installation?",
+        question: "What after-installation support does Shyam Techno Print provide?",
         answer:
-          "We provide complete after-sales support including installation, operator training, maintenance guidance, technical assistance, spare parts support, and production optimization to ensure smooth long-term operation.",
+          "Shyam Techno Print provides installation, operator training, maintenance guidance, technical support, and spare parts support after every machine sale.",
       },
       {
-        question: "Where can I buy a Tissue Paper Making Machine in Faridabad?",
+        question: "Where can I buy a Tissue Paper Machine in Faridabad?",
         answer:
-          "Shyam Techno Print is based in Faridabad, Haryana and is one of the leading suppliers of Tissue Paper Making Machine in Faridabad and across Delhi NCR. Contact us at +91 9654707061 for a free quote and live demonstration.",
+          "Shyam Techno Print, based in Faridabad, is a leading Tissue Paper Machine supplier in Faridabad and Delhi NCR. Call +91 9654707061 for a free quote.",
       },
       {
         question: "Does Shyam Techno Print provide installation support?",
         answer:
-          "Yes. Our team provides complete installation, commissioning, and operator training at your facility anywhere in India.",
+          "Yes, Shyam Techno Print provides complete installation, commissioning, and operator training at your facility anywhere in India.",
       },
       {
         question: "What is the power consumption of the STP-NB40?",
         answer:
-          "The machine runs on 2 KW power supply — making it energy efficient even at high production volumes.",
+          "The STP-NB40 runs on just 2 KW power, making it energy-efficient even at high production volumes.",
+      },
+      {
+        question: "Which is the best Tissue Paper Machine manufacturer in India?",
+        answer:
+          "Shyam Techno Print is one of the best Tissue Paper Machine manufacturers in India, known for durable machines, high output, and complete after-sales support.",
       },
     ],
   },

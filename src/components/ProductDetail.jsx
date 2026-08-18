@@ -48,8 +48,30 @@ export default function ProductDetail({ product }) {
   const linkify = (text) =>
     linkifyText(text, product.keyword || product.name, counters);
 
+  const faqSchema = Array.isArray(product.faqs)
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: product.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }
+    : null;
+
   return (
     <section className="py-20">
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-10 px-5">
 
         <div className=" rounded-xl p-10 shadow">
