@@ -11,6 +11,7 @@ import {
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact Us - Shyam Techno Print, Faridabad",
@@ -165,58 +166,7 @@ export default function ContactPage() {
 
             {/* ================= Right Side ================= */}
             <div className="p-5 sm:p-8 md:p-10">
-              <form className="space-y-6">
-                <div className="grid gap-5 md:grid-cols-2">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="h-14 w-full border border-gray-300 px-4 outline-none transition focus:border-red-600"
-                  />
-
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    className="h-14 w-full border border-gray-300 px-4 outline-none transition focus:border-red-600"
-                  />
-                </div>
-
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="h-14 w-full border border-gray-300 px-4 outline-none transition focus:border-red-600"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Mobile Number"
-                  className="h-14 w-full border border-gray-300 px-4 outline-none transition focus:border-red-600"
-                />
-
-                <textarea
-                  rows={6}
-                  placeholder="Message"
-                  className="w-full border border-gray-300 p-4 outline-none transition focus:border-red-600"
-                ></textarea>
-
-                {/* Dummy Captcha */}
-                <div className="flex h-20 max-w-sm items-center gap-4 rounded border border-gray-300 bg-white px-5">
-                  <input
-                    type="checkbox"
-                    className="h-6 w-6"
-                  />
-
-                  <span className="text-gray-700">
-                    I'm not a robot
-                  </span>
-                </div>
-
-                <button
-                  type="submit"
-                  className="rounded bg-red-600 px-10 py-4 text-lg font-semibold text-white transition hover:bg-black"
-                >
-                  Submit
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
