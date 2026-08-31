@@ -18,11 +18,7 @@ const nextConfig = {
         destination: "/flexo-printing-machines-manufacturer-in-faridabad",
         permanent: true,
       },
-      {
-        source: "/understanding-flexo-printing-machines-:path(.*)",
-        destination: "/flexo-printing-machines-manufacturer-in-faridabad",
-        permanent: true,
-      },
+
       {
         source: "/offset-printing-machine",
         destination: "/offset-printing-machine-manufacturer",
