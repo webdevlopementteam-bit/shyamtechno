@@ -43,10 +43,39 @@ function linkifyText(text, productName, counters) {
   });
 }
 
+// Wraps every occurrence of `keyword` in a plain string in <strong>, leaving
+// everything else untouched. Used only for products that set `boldKeyword`.
+function boldifyText(text, keyword, keyPrefix) {
+  if (typeof text !== "string" || !text || !keyword) return text;
+  const parts = text.split(new RegExp(`(${escapeRegExp(keyword)})`, "g"));
+  if (parts.length === 1) return text;
+  return parts.map((part, index) =>
+    part === keyword ? (
+      <strong key={`${keyPrefix}-b-${index}`}>{part}</strong>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function ProductDetail({ product }) {
   const counters = { product: 0, brand: 0 };
   const linkify = (text) =>
     linkifyText(text, product.keyword || product.name, counters);
+
+  // If the product sets boldKeyword, bold every remaining plain-text
+  // occurrence of it (the ones linkify() didn't already turn into a link).
+  const renderText = (text, textKey = "t") => {
+    const linked = linkify(text);
+    if (!product.boldKeyword) return linked;
+    if (Array.isArray(linked)) {
+      return linked.flatMap((node, index) => {
+        const bolded = boldifyText(node, product.boldKeyword, `${textKey}-${index}`);
+        return Array.isArray(bolded) ? bolded : [bolded];
+      });
+    }
+    return boldifyText(linked, product.boldKeyword, textKey);
+  };
 
   const faqSchema = Array.isArray(product.faqs)
     ? {
@@ -102,7 +131,7 @@ export default function ProductDetail({ product }) {
             ) : product.description || !product.specs ? (
               <p className="text-gray-600 leading-8">
                 {product.description
-                  ? linkify(product.description)
+                  ? renderText(product.description, "desc")
                   : "Product description goes here..."}
               </p>
             ) : null)}
@@ -116,7 +145,7 @@ export default function ProductDetail({ product }) {
               </div>
               {product.specs.intro && (
                 <p className="px-6 pt-6 text-gray-600 leading-8">
-                  {linkify(product.specs.intro)}
+                  {renderText(product.specs.intro, "specs-intro")}
                 </p>
               )}
               {product.specs.subtitle && (
@@ -175,7 +204,7 @@ export default function ProductDetail({ product }) {
               )}
               {block.paragraphs?.map((para, pIndex) => (
                 <p key={pIndex} className="text-gray-600 leading-8 mb-4">
-                  {linkify(para)}
+                  {renderText(para, `block-${index}-p-${pIndex}`)}
                 </p>
               ))}
               {block.items && (
@@ -186,7 +215,7 @@ export default function ProductDetail({ product }) {
                         {item.title}
                       </h3>
                       <p className="text-gray-600 leading-8">
-                        {linkify(item.text)}
+                        {renderText(item.text, `block-${index}-item-${iIndex}`)}
                       </p>
                     </div>
                   ))}
@@ -242,12 +271,12 @@ export default function ProductDetail({ product }) {
                       key={nIndex}
                       className="text-gray-600 leading-8 mt-4"
                     >
-                      {linkify(n)}
+                      {renderText(n, `block-${index}-note-${nIndex}`)}
                     </p>
                   ))
                 ) : (
                   <p className="text-gray-600 leading-8 mt-4">
-                    {linkify(block.note)}
+                    {renderText(block.note, `block-${index}-note`)}
                   </p>
                 ))}
             </div>
@@ -267,7 +296,7 @@ export default function ProductDetail({ product }) {
                   Q{index + 1}. {faq.question}
                 </h3>
                 <p className="text-gray-600 leading-8">
-                  {linkify(faq.answer)}
+                  {renderText(faq.answer, `faq-${index}-answer`)}
                 </p>
                 {faq.list && (
                   <ul className="space-y-2 text-gray-600 leading-8 list-disc pl-5 mt-2">
@@ -278,7 +307,7 @@ export default function ProductDetail({ product }) {
                 )}
                 {faq.note && (
                   <p className="text-gray-600 leading-8 mt-2">
-                    {linkify(faq.note)}
+                    {renderText(faq.note, `faq-${index}-note`)}
                   </p>
                 )}
               </div>

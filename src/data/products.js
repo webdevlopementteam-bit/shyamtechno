@@ -387,13 +387,16 @@ const products = [
   {
     id: 6,
     slug: "flexo-printing-machine-manufacturer",
-    name: "Flexo Printing Machine",
+    name: "Flexo Printing Machine Manufacturer",
+    boldKeyword: "Flexo Printing Machine Manufacturer",
     meta: {
       title: "Best Flexo Printing Machine Manufacturer in Faridabad | Shyam Techno Print",
       description:
-        "Buy high-quality Flexo Printing Machine from Shyam Techno Print, a trusted manufacturer in Faridabad offering durable and efficient printing solutions.",
+        "Shyam Techno Print is a trusted flexo printing machine manufacturer offering high-performance, efficient printing solutions for packaging and industrial applications. Contact us today!",
       keywords: [
         "Flexo Printing Machine",
+        "Flexographic Printing Machine",
+        "4 Color Roll to Roll Flexo Printing Machine",
         "Flexo Printing Machine Manufacturer",
         "Flexo Printing Machine Manufacturer in faridabad",
       ],
@@ -428,18 +431,19 @@ const products = [
     content: [
       {
         heading:
-          "Best Flexo Printing Machine Manufacturer in Faridabad – Shyam Techno Print",
+          "Buy Flexo Printing Machine from a Trusted Flexo Printing Machine Manufacturer in Faridabad - Shyam Techno Print",
         paragraphs: [
-          "Flexo Printing Machine is one of the most advanced printing solutions for businesses looking for high-speed, high-quality, and cost-effective printing on paper, paper bags, non-woven fabric, kraft paper, and flexible packaging materials. At Shyam Techno Print, we specialize in designing and manufacturing high-performance Flexo Printing Machine systems that deliver exceptional print quality, speed, precision, and long-term reliability. With 17+ years of expertise in paper converting and printing machinery, our machines are trusted by manufacturers producing paper bags, food packaging, retail packaging, pharmaceutical packaging, corrugated boxes, and other printed paper products. Every machine is engineered using advanced automation, premium components, and strict quality standards to ensure maximum productivity, reduced operating costs, accurate color registration, and consistent printing quality for small, medium, and large-scale production units.",
+          "Flexo Printing Machine is is one of the most advanced printing solutions for businesses looking for high-speed, high-quality, and cost-effective printing on paper, paper bags, non-woven fabric, kraft paper, and flexible packaging materials. At Shyam Techno Print, we are an experienced Flexo Printing Machine Manufacturer specializing in designing and manufacturing high-performance flexographic printing systems that deliver exceptional print quality, speed, precision, and long-term reliability. With 17+ years of expertise in paper converting and printing machinery, our machines are trusted by manufacturers producing paper bags, food packaging, retail packaging, pharmaceutical packaging, corrugated boxes, and other printed paper products. Every machine is engineered using advanced automation, premium components, and strict quality standards to ensure maximum productivity, reduced operating costs, accurate colour registration, and consistent printing quality for small, medium, and large-scale production units.",
         ],
       },
       {
         heading: "What is a Flexo Printing Machine?",
         paragraphs: [
-          "A Flexo Printing Machines, also known as a Flexographic Printing Machine, is a modern printing system used for printing images, logos, text, and graphics on various materials such as paper, plastic films, non-woven fabric, foil, and flexible packaging materials.",
-          "The machine uses flexible printing plates along with an anilox roller to transfer ink evenly onto the substrate. Due to its high printing speed, excellent print quality, and multi-color printing capability, flexographic printing has become one of the most preferred printing methods in the packaging industry.",
+          "A Flexo Printing Machines, also known as a flexographic printing machine, is a modern printing system used for printing images, logos, text, and graphics on various materials such as paper, plastic films, non-woven fabric, foil, and flexible packaging materials. As an experienced Flexo Printing Machine Manufacturer, Shyam Techno Print provides flexographic printing solutions designed to meet the diverse requirements of packaging and printing industries.",
+          "The machine uses flexible printing plates along with an anilox roller to transfer ink evenly onto the substrate. Due to its high printing speed, excellent print quality, and multi-color printing capability, flexographic printing has become one of the most preferred printing methods in the packaging industry. A reliable Flexo Printing Machine Manufacturer focuses on delivering efficient machine performance, consistent printing results, and solutions suitable for different production requirements.",
         ],
       },
+      
       {
         heading: "Types of Flexo Printing Machines We Offer",
         items: [
@@ -476,12 +480,7 @@ const products = [
         ],
         note: "Whether you are starting a new printing business or upgrading your existing production line, our solutions are designed to meet diverse industrial printing requirements.",
       },
-      {
-        heading: "Non-Woven Flexo Printing Machine",
-        paragraphs: [
-          "This machine is specially designed for printing shopping bags, carry bags, and other non-woven products with excellent color quality and long-lasting performance.",
-        ],
-      },
+      
       {
         heading: "Key Features of Flexo Printing Machine",
         paragraphs: [
@@ -536,13 +535,7 @@ const products = [
           "Reliable after-sales service and technical support",
         ],
       },
-      {
-        heading: "Technical Specifications",
-        paragraphs: [
-          "Our high speed Flexo Printing Machine is available in different models to meet various production requirements. The machine is equipped with advanced components such as Anilox Steel Rolls, Hot Air Dryer, Pneumatic Airshaft, and Helical Gear Drive to ensure smooth operation and excellent printing performance.",
-          "Note: Detailed technical specifications and model information are provided in the specification table above.",
-        ],
-      },
+      
       {
         heading: "Why Choose Shyam Techno Print?",
         paragraphs: [
@@ -591,10 +584,10 @@ const products = [
         note: "Our experienced team is always ready to assist customers with technical guidance and after-sales services.",
       },
       {
-        heading: "Complete After-Sales Support",
+        heading:"Complete After-Sales Support",
         paragraphs: [
-          "Purchasing a machine is only the beginning of our relationship with customers. Our dedicated support team provides complete assistance from installation to daily machine operation. We offer machine installation support, operator training, maintenance guidance, technical troubleshooting, and quick spare parts availability whenever required. Whether you need production advice or technical assistance, our experts are always ready to help you keep your printing operations running smoothly with minimum downtime.",
-        ],
+          "Purchasing a machine is only the beginning of our relationship with customers. As a trusted Flexo Printing Machine Manufacturer, our dedicated support team provides complete assistance from installation to daily machine operation. We offer machine installation support, operator training, maintenance guidance, technical troubleshooting, and quick spare parts availability whenever required. Whether you need production advice or technical assistance, our experts are always ready to help you keep your printing operations running smoothly with minimal downtime.",
+        ]
       },
     ],
     faqs: [
