@@ -17,6 +17,8 @@ const STANDALONE_PAGES = [
   "/paper-bag-making-machines/",
   "/non-woven-bag-making-machine-rajasthan/",
   "/butter-paper-sheet-cutting-machine-mumbai/",
+  "/multi-colour-flexographic-printing-machine-in-faridabad/",
+  "/automatic-offset-printing-machine-in-faridabad/",
 ];
 
 export default function sitemap() {

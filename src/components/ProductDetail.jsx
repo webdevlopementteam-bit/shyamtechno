@@ -9,28 +9,63 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-// Auto-links up to LINK_LIMIT mentions of the product name (-> /contact-us)
+function parseMarkdownLinks(text) {
+  if (typeof text !== "string" || !text.includes("](")) return text;
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const label = match[1];
+    const url = match[2];
+    parts.push(
+      <Link key={`md-link-${match.index}`} href={url} className={LINK_CLASS}>
+        {label}
+      </Link>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
+
+// Auto-links up to LINK_LIMIT mentions of the product name / custom links (-> relevant pages)
 // and up to LINK_LIMIT mentions of "Shyam Techno Print" (-> /), tracking the
 // running total in `counters` so the whole page never exceeds LINK_LIMIT
 // links per keyword. At most one link is placed per text block (paragraph),
 // so the links spread across the page instead of clustering in one spot.
-function linkifyText(text, productName, counters) {
+function linkifyText(text, productName, counters, keywordHref = "/contact-us", customLinks = [], skipBrandLink = false) {
   if (typeof text !== "string" || !text) return text;
 
   const targets = [
-    productName && { match: productName, href: "/contact-us", key: "product" },
-    { match: "Shyam Techno Print", href: "/", key: "brand" },
+    ...(customLinks || []).map((cl, i) => ({
+      match: cl.match,
+      href: cl.href,
+      key: cl.key || `custom-${i}`,
+      limit: cl.limit || LINK_LIMIT,
+    })),
+    keywordHref && productName && { match: productName, href: keywordHref, key: "product", limit: LINK_LIMIT },
+    !skipBrandLink && { match: "Shyam Techno Print", href: "/", key: "brand", limit: LINK_LIMIT },
   ].filter(Boolean);
 
   const pattern = targets.map((t) => escapeRegExp(t.match)).join("|");
   if (!pattern) return text;
 
-  const parts = text.split(new RegExp(`(${pattern})`, "g"));
+  const parts = text.split(new RegExp(`(${pattern})`, "gi"));
   let usedInThisBlock = false;
 
   return parts.map((part, index) => {
-    const target = targets.find((t) => t.match === part);
-    if (target && !usedInThisBlock && counters[target.key] < LINK_LIMIT) {
+    const target = targets.find((t) => t.match.toLowerCase() === part.toLowerCase());
+    if (!target) return part;
+
+    if (!counters[target.key]) counters[target.key] = 0;
+    const limit = target.limit || LINK_LIMIT;
+    if (!usedInThisBlock && counters[target.key] < limit) {
       counters[target.key] += 1;
       usedInThisBlock = true;
       return (
@@ -60,13 +95,31 @@ function boldifyText(text, keyword, keyPrefix) {
 
 export default function ProductDetail({ product }) {
   const counters = { product: 0, brand: 0 };
-  const linkify = (text) =>
-    linkifyText(text, product.keyword || product.name, counters);
+  const linkify = (text, skipBrandLink = false) =>
+    linkifyText(
+      text,
+      product.keyword || product.name,
+      counters,
+      product.keywordHref !== undefined ? product.keywordHref : "/contact-us",
+      product.customLinks,
+      skipBrandLink
+    );
 
   // If the product sets boldKeyword, bold every remaining plain-text
   // occurrence of it (the ones linkify() didn't already turn into a link).
   const renderText = (text, textKey = "t") => {
-    const linked = linkify(text);
+    if (typeof text === "string" && text.includes("](")) {
+      const parsed = parseMarkdownLinks(text);
+      return Array.isArray(parsed)
+        ? parsed.map((item, i) =>
+            typeof item === "string" ? renderText(item, `${textKey}-p-${i}`) : item
+          )
+        : parsed;
+    }
+    const skipBrandLink = (product.plainBrandLinkParagraphs || []).some((prefix) =>
+      textKey.startsWith(prefix)
+    );
+    const linked = linkify(text, skipBrandLink);
     if (!product.boldKeyword) return linked;
     if (Array.isArray(linked)) {
       return linked.flatMap((node, index) => {
