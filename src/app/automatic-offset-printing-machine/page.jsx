@@ -1,22 +1,21 @@
 import ProductDetail from "@/components/ProductDetail";
 
 export const metadata = {
-  title:
-    "Automatic Offset Printing Machine in Faridabad | Shyam Techno Print",
+  title: "Best Automatic Offset Printing Machine | Shyam Techno Print",
   description:
-    "Buy an automatic offset printing machine in Faridabad from Shyam Techno Print. 2 colour offset printing machine, 40-50 bags/min, 2000 IPH. Get price and a free quote.",
+    "Buy an automatic offset printing machine from Shyam Techno Print. 2 colour offset printing machine, 40-50 bags/min, 2000 IPH. Get price and a free quote.",
   keywords: [
     "Automatic Offset Printing Machine",
     "Automatic Offset Printing Machine In Faridabad",
   ],
   alternates: {
     canonical:
-      "https://www.shyamtechnoprint.co.in/automatic-offset-printing-machine-in-faridabad/",
+      "https://www.shyamtechnoprint.co.in/automatic-offset-printing-machine",
   },
 };
 
 const product = {
-  name: "Automatic Offset Printing Machine in Faridabad",
+  name: "Automatic Offset Printing Machine",
   keyword: "Automatic Offset Printing Machine",
   boldKeyword: "Automatic Offset Printing Machine",
   keywordHref: false,
@@ -43,7 +42,7 @@ const product = {
   content: [
     {
       heading:
-        "Automatic Offset Printing Machine in Faridabad – Shyam Techno Print",
+        "Automatic Offset Printing Machine – Shyam Techno Print",
       paragraphs: [
         "An [automatic offset printing machine](/offset-printing-machine-manufacturer) prints by moving ink from a plate to a rubber blanket, and then onto the material. This gives sharp, even prints with less manual work. Shyam Techno Print manufactures an automatic offset printing machine in Faridabad, Haryana. Our 2 colour model prints non-woven bags at 40-50 bags per minute.",
       ],
@@ -164,6 +163,6 @@ const product = {
   ],
 };
 
-export default function AutomaticOffsetPrintingMachineFaridabadPage() {
+export default function AutomaticOffsetPrintingMachinePage() {
   return <ProductDetail product={product} />;
 }

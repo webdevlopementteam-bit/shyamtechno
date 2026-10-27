@@ -20,7 +20,12 @@ const nextConfig = {
       },
       {
         source: "/multi-colour-flexographic-printing-machine-manufacturer-in-faridabad",
-        destination: "/multi-colour-flexographic-printing-machine-in-faridabad",
+        destination: "/multi-colour-flexographic-printing-machine",
+        permanent: true,
+      },
+      {
+        source: "/multi-colour-flexographic-printing-machine-in-faridabad",
+        destination: "/multi-colour-flexographic-printing-machine",
         permanent: true,
       },
 
@@ -30,8 +35,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/automatic-offset-printing-machine",
-        destination: "/automatic-offset-printing-machine-in-faridabad",
+        source: "/automatic-offset-printing-machine-in-faridabad",
+        destination: "/automatic-offset-printing-machine",
         permanent: true,
       },
     ];

@@ -2,9 +2,9 @@ import ProductDetail from "@/components/ProductDetail";
 
 export const metadata = {
   title:
-    "Multi Colour Flexographic Printing Machine in Faridabad | Shyam Techno Print",
+    "Top Multi Colour Flexographic Printing Machine | Shyam Techno Print",
   description:
-    "Buy a multi colour flexographic printing machine in Faridabad from Shyam Techno Print. 4 colour roll to roll flexo, 10-80 m/min. 17+ years of experience. Get a free quote.",
+    "Buy a multi colour flexographic printing machine from Shyam Techno Print. 4 colour roll to roll flexo, 10-80 m/min. 17+ years of experience. Get a free quote.",
   keywords: [
     "Multi Colour Flexogarphic Printing Machine",
     "Flexo Printing Machine",
@@ -13,12 +13,12 @@ export const metadata = {
   ],
   alternates: {
     canonical:
-      "https://www.shyamtechnoprint.co.in/multi-colour-flexographic-printing-machine-in-faridabad/",
+      "https://www.shyamtechnoprint.co.in/multi-colour-flexographic-printing-machine",
   },
 };
 
 const product = {
-  name: "Multi Colour Flexographic Printing Machine in Faridabad",
+  name: "Multi Colour Flexographic Printing Machine",
   keyword: "Multi Colour Flexographic Printing Machine",
   boldKeyword: "Multi Colour Flexographic Printing Machine",
   keywordHref: false,
@@ -54,7 +54,7 @@ const product = {
   content: [
     {
       heading:
-        "Multi Colour Flexographic Printing Machine in Faridabad – Shyam Techno Print",
+        "Multi Colour Flexographic Printing Machine – Shyam Techno Print",
       paragraphs: [
         "Printing can make or break your packaging. A blurry logo or a colour that doesn’t match looks bad on a bag, a film, or a label. A [multi colour flexographic printing machine](/flexo-printing-machine-manufacturer) solves this by printing several colours in one pass, even on big orders.",
         "At Shyam Techno Print, we have been in this business for over 17 years, and more than 29,000 clients have trusted us with their printing needs. If you are looking for a multi colour flexographic printing machine in Faridabad, whether for a new unit or to replace an old machine, we can help you pick the right one.",
@@ -221,6 +221,6 @@ const product = {
   ],
 };
 
-export default function MultiColourFlexographicPrintingMachineFaridabadPage() {
+export default function MultiColourFlexographicPrintingMachinePage() {
   return <ProductDetail product={product} />;
 }
