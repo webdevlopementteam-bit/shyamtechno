@@ -2,27 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-
-const WEB3FORMS_ACCESS_KEYS = [
-  "ba9c38e5-d4f0-416a-bceb-85bc972d9d00",
-  "bbeaa864-720a-4f6e-b703-8ea3360033e7",
-];
-
-async function submitToWeb3Forms(accessKey, payload) {
-  const res = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({ ...payload, access_key: accessKey }),
-  });
-  const data = await res.json();
-  if (!data.success) {
-    throw new Error(data.message || "Submission failed");
-  }
-  return data;
-}
+import { sendEnquiry } from "@/lib/web3forms";
 
 export default function ContactForm() {
   const router = useRouter();
@@ -46,13 +26,9 @@ export default function ContactForm() {
       subject: "New Enquiry from Shyam Techno Print Website",
     };
 
-    const results = await Promise.allSettled(
-      WEB3FORMS_ACCESS_KEYS.map((key) => submitToWeb3Forms(key, payload))
-    );
-
+    const anySucceeded = await sendEnquiry(payload);
     setSubmitting(false);
 
-    const anySucceeded = results.some((r) => r.status === "fulfilled");
     if (anySucceeded) {
       router.push("/thank-you");
     } else {

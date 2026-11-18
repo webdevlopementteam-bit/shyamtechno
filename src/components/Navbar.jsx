@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
 import products from "@/data/products";
+import { openEnquiryPopup } from "@/lib/web3forms";
 
 const NAV_LINKS = [
   { label: "HOME", href: "/", active: true },
@@ -162,11 +163,13 @@ export default function Header() {
 
               {/* Desktop enquiry button */}
               <div className="hidden lg:block z-10 shrink-0 ">
-                <Link href="/contact-us">
-                  <button className="bg-white text-gray-900 font-semibold text-base px-8 py-3 rounded-full shadow-md hover:bg-gray-100 whitespace-nowrap cursor-pointer">
-                    ENQUIRY NOW
-                  </button>
-                </Link>
+                <button
+                  type="button"
+                  onClick={openEnquiryPopup}
+                  className="bg-white text-gray-900 font-semibold text-base px-8 py-3 rounded-full shadow-md hover:bg-gray-100 whitespace-nowrap cursor-pointer"
+                >
+                  ENQUIRY NOW
+                </button>
               </div>
 
               {/* Mobile menu toggle */}
@@ -243,7 +246,13 @@ export default function Header() {
                     </Link>
                   )
                 )}
-                <button className="mt-4 bg-white text-gray-900 font-semibold text-base px-6 py-3 rounded-full shadow-md hover:bg-gray-100 w-full">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    openEnquiryPopup();
+                  }}
+                  className="mt-4 bg-white text-gray-900 font-semibold text-base px-6 py-3 rounded-full shadow-md hover:bg-gray-100 w-full">
                   ENQUIRY NOW
                 </button>
               </nav>
